@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scale Smart: Enterprise AI Automation - Designed for large organizations, our AI automation orchestrates complex operations and integrates seamlessly with existing systems.">
+    <meta name="keywords" content="Enterprise AI, Automation, AI Consulting, Enterprise Security">
+    <meta name="author" content="Scale Smart">
+    <title>Scale Smart: Enterprise AI Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-orange {
+            background: linear-gradient(135deg, #ff8c42 0%, #ff6b35 100%);
+        }
+        
+        .gradient-orange-light {
+            background: linear-gradient(135deg, #ffe5cc 0%, #ffd9b3 100%);
+        }
+        
+        .btn-primary {
+            @apply px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2;
+        }
+        
+        .btn-secondary {
+            @apply px-8 py-3 border-2 border-orange-500 text-orange-600 font-semibold rounded-lg transition-all duration-300 hover:bg-orange-50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2;
+        }
+        
+        .card-hover {
+            @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+        }
+        
+        .feature-icon {
+            @apply w-14 h-14 rounded-full bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center text-orange-600 text-2xl;
+        }
+        
+        .section-title {
+            @apply text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight;
+        }
+        
+        .section-subtitle {
+            @apply text-xl text-gray-600 mb-12 max-w-3xl;
+        }
+        
+        .star-rating {
+            @apply flex gap-1 text-yellow-400;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-lg gradient-orange flex items-center justify-center text-white font-bold text-xl">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">Scale Smart</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-700 font-medium transition-colors duration-300 hover:text-orange-600">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium transition-colors duration-300 hover:text-orange-600">Benefits</a>
+                <a href="#about" class="text-gray-700 font-medium transition-colors duration-300 hover:text-orange-600">About</a>
+                <a href="#testimonials" class="text-gray-700 font-medium transition-colors duration-300 hover:text-orange-600">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium transition-colors duration-300 hover:text-orange-600">FAQ</a>
+                <a href="https://test.com" class="btn-primary">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-700 text-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-lg p-2" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-4">
+            <a href="#features" class="block text-gray-700 font-medium py-2 transition-colors duration-300 hover:text-orange-600">Features</a>
+            <a href="#benefits" class="block text-gray-700 font-medium py-2 transition-colors duration-300 hover:text-orange-600">Benefits</a>
+            <a href="#about" class="block text-gray-700 font-medium py-2 transition-colors duration-300 hover:text-orange-600">About</a>
+            <a href="#testimonials" class="block text-gray-700 font-medium py-2 transition-colors duration-300 hover:text-orange-600">Testimonials</a>
+            <a href="#faq" class="block text-gray-700 font-medium py-2 transition-colors duration-300 hover:text-orange-600">FAQ</a>
+            <a href="https://test.com" class="block btn-primary text-center">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 lg:py-40 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-orange-50 -z-10"></div>
+        <div class="absolute top-20 right-0 w-72 h-72 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10 animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10 animate-pulse"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+                    Scale Smart: <span class="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">Enterprise AI Automation</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                    Designed for large organizations, our AI automation orchestrates complex operations and integrates seamlessly with existing systems. Transform your enterprise with intelligent automation that drives efficiency at scale.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://test.com" class="btn-primary text-center">
+                        <i class="fas fa-rocket mr-2"></i>Start Your Transformation
+                    </a>
+                    <button class="btn-secondary text-center">
+                        <i class="fas fa-play-circle mr-2"></i>Watch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Enterprise-Grade Features</h2>
+                <p class="section-subtitle">Comprehensive AI automation solutions built for the demands of large-scale operations</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Enterprise-Grade Security -->
+                <div class="card-hover p-8 rounded-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Enterprise-Grade Security</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Military-grade encryption, advanced threat detection, and comprehensive compliance frameworks. Our security infrastructure meets the most stringent regulatory requirements including GDPR, HIPAA, and SOC 2 Type II certifications. Protect your data with multi-layer security protocols and continuous monitoring.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>End-to-end encryption</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Real-time threat detection</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Compliance automation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Scalable AI Models -->
+                <div class="card-hover p-8 rounded-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Scalable AI Models</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Dynamically scalable machine learning models that grow with your organization. Our proprietary AI engine processes millions of transactions daily with sub-second latency. Leverage advanced natural language processing, computer vision, and predictive analytics tailored to your industry.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Auto-scaling infrastructure</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>99.99% uptime SLA</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Custom model training</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Expert AI Consulting -->
+                <div class="card-hover p-8 rounded-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert AI Consulting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Access to a dedicated team of AI specialists with decades of combined experience. Our consultants work closely with your organization to design, implement, and optimize AI solutions. From strategy development to production deployment, we guide you through every step of your AI transformation journey.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>24/7 dedicated support</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Strategic planning sessions</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Continuous optimization</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-28 bg-gradient-to-br from-orange-50 via-white to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Transformative Business Benefits</h2>
+                <p class="section-subtitle">Unlock unprecedented value and competitive advantage with our AI automation platform</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Benefit 1: Operational Excellence -->
+                <div class="card-hover group">
+                    <div class="p-8 rounded-2xl bg-white border border-gray-200 h-full">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center text-orange-600 text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Achieve Operational Excellence</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Streamline workflows, eliminate bottlenecks, and optimize resource allocation across your entire organization. Our AI automation reduces manual processes by up to 80%, enabling your teams to focus on strategic initiatives that drive growth and innovation.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Reduce process cycle times by 60-70%</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Increase productivity and team efficiency</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Enable 24/7 continuous operations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Ensure Compliance -->
+                <div class="card-hover group">
+                    <div class="p-8 rounded-2xl bg-white border border-gray-200 h-full">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center text-orange-600 text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Ensure Compliance</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Maintain regulatory compliance with automated monitoring, documentation, and reporting. Our platform ensures adherence to industry standards and regulatory requirements, reducing compliance costs and mitigating risk exposure across all operations.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Automated audit trails and reporting</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Real-time compliance monitoring</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Reduce compliance violations by 95%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Maximize ROI -->
+                <div class="card-hover group">
+                    <div class="p-8 rounded-2xl bg-white border border-gray-200 h-full">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center text-orange-600 text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Maximize ROI</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Deliver measurable financial impact through cost reduction, revenue acceleration, and improved resource utilization. Our clients achieve average ROI of 300-400% within the first year of implementation, with ongoing gains through continuous optimization.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">300-400% average first-year ROI</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Reduce operational costs by 40-50%</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-orange-500 font-bold text-lg mt-1">→</span>
+                                <p class="text-gray-600">Accelerate revenue growth initiatives</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=400&fit=crop'); opacity: 0.3;"></div>
+                <div class="absolute inset-0 gradient-orange opacity-90"></div>
+                <div class="relative px-8 py-16 md:py-20 text-center">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Transform Your Enterprise?</h3>
+                    <p class="text-xl text-orange-50 mb-8 max-w-2xl mx-auto">Join industry leaders who have achieved unprecedented operational excellence with our AI automation platform.</p>
+                    <a href="https://test.com" class="inline-block px-10 py-4 bg-white text-orange-600 font-bold rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-600">
+                        <i class="fas fa-arrow-right mr-2"></i>Schedule Your Demo Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="section-title">About Scale Smart</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Founded in 2018 by a team of AI researchers and enterprise technology veterans, Scale Smart emerged from a simple observation: most organizations were struggling to harness the power of artificial intelligence due to complexity, cost, and lack of expertise. We built our platform to democratize enterprise AI, making advanced automation accessible to organizations of all sizes. Over the past six years, we've grown from a startup to a trusted partner for Fortune 500 companies, helping them automate billions of transactions and unlock unprecedented operational efficiency.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Our mission is to empower enterprises to thrive in the age of AI by providing intelligent, secure, and scalable automation solutions. We believe that technology should serve people, not replace them. That's why we've built our platform with a human-centric approach, ensuring that AI augments human capability and enables teams to focus on what matters most. Our core values—innovation, integrity, and impact—guide every decision we make, from product development to customer success.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-100 to-orange-50 rounded-3xl -z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop" alt="Scale Smart Team" class="rounded-3xl shadow-lg">
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-orange-600">500+</p>
+                            <p class="text-gray-600 font-semibold">Enterprise Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-28 bg-gradient-to-br from-orange-50 via-white to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Trusted by Industry Leaders</h2>
+                <p class="section-subtitle">Hear from enterprise customers who have transformed their operations with Scale Smart</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover p-8 rounded-2xl bg-white border border-gray-200 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "Scale Smart has been a game-changer for our organization. We reduced our manual data processing time by 75% within just three months of implementation. The platform's intuitive interface made adoption seamless across our teams, and the ROI exceeded our initial projections by 40%. Their support team is exceptional—always responsive and genuinely invested in our success."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Sarah Chen</p>
+                        <p class="text-sm text-gray-600">VP of Operations, Global Finance Corp</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover p-8 rounded-2xl bg-white border border-gray-200 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "The compliance automation features alone have saved us countless hours on regulatory reporting. We now maintain 100% compliance across all our operations with minimal manual intervention. Scale Smart's AI models have proven remarkably accurate, and their consulting team provided invaluable guidance during our implementation."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Michael Rodriguez</p>
+                        <p class="text-sm text-gray-600">Chief Compliance Officer, Healthcare Solutions Inc</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover p-8 rounded-2xl bg-white border border-gray-200 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "What impressed us most was the platform's ability to scale seamlessly as our business grew. We went from processing 1 million transactions daily to 50 million without any performance degradation. The enterprise-grade security features gave us confidence in deploying AI across all our critical operations. Exceptional platform and even better support."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Jennifer Williams</p>
+                        <p class="text-sm text-gray-600">CTO, E-Commerce Innovations Ltd</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover p-8 rounded-2xl bg-white border border-gray-200 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "The ROI has been phenomenal. We've eliminated redundant processes, reduced headcount requirements through automation, and freed up our teams to focus on strategic initiatives. Within 18 months, we've achieved a 350% return on investment. Scale Smart's predictive analytics have also helped us anticipate market trends and stay ahead of the competition."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">David Thompson</p>
+                        <p class="text-sm text-gray-600">CFO, Manufacturing Excellence Corp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-28 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Get answers to common questions about Scale Smart's AI automation platform</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="faq-question w-full p-6 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-inset" aria-expanded="false">
+                        <span class="text-lg font-semibold text-gray-900 text-left">How long does implementation typically take?</span>
+                        <i class="faq-icon fas fa-chevron-down text-orange-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-6 py-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Implementation timelines vary based on your organization's complexity and requirements. For most enterprise clients, we complete initial deployment within 4-8 weeks. This includes discovery and assessment (1-2 weeks), platform configuration and customization (2-4 weeks), testing and validation (1-2 weeks), and go-live support (1 week). Our experienced implementation team works closely with your organization to ensure a smooth transition with minimal disruption to operations. We also provide comprehensive training and change management support to maximize adoption across your teams.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="faq-question w-full p-6 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-inset" aria-expanded="false">
+                        <span class="text-lg font-semibold text-gray-900 text-left">What security measures are in place to protect our data?</span>
+                        <i class="faq-icon fas fa-chevron-down text-orange-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-6 py-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Security is paramount at Scale Smart. We implement military-grade AES-256 encryption for data at rest and TLS 1.3 for data in transit. Our infrastructure is hosted on enterprise-grade cloud platforms with SOC 2 Type II certification and maintains 99.99% uptime. We conduct regular security audits and penetration testing, maintain comprehensive audit trails, and provide real-time threat detection. Additionally, we're fully compliant with GDPR, HIPAA, and other major regulatory frameworks. All data is encrypted end-to-end, and we maintain strict access controls with multi-factor authentication and role-based permissions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="faq-question w-full p-6 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-inset" aria-expanded="false">
+                        <span class="text-lg font-semibold text-gray-900 text-left">Can Scale Smart integrate with our existing systems?</span>
+                        <i class="faq-icon fas fa-chevron-down text-orange-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-6 py-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, seamless integration is one of Scale Smart's core strengths. We support integration with virtually any enterprise system through our comprehensive API framework, pre-built connectors, and middleware solutions. We work with legacy systems, modern cloud platforms, and everything in between. Our integration team has extensive experience with SAP, Oracle, Salesforce, Microsoft Dynamics, and hundreds of other enterprise applications. We also support custom integrations through webhooks, message queues, and real-time data synchronization. During implementation, our team will assess your current technology stack and design an integration architecture that minimizes disruption while maximizing efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="faq-question w-full p-6 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-inset" aria-expanded="false">
+                        <span class="text-lg font-semibold text-gray-900 text-left">What kind of support and training do you provide?</span>
+                        <i class="faq-icon fas fa-chevron-down text-orange-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-6 py-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We provide comprehensive support and training to ensure your success. This includes 24/7 dedicated support with response times of under 1 hour for critical issues, comprehensive onboarding training for your teams, ongoing optimization consulting, regular strategy sessions with our AI experts, and access to our extensive knowledge base and video tutorials. We also provide advanced training programs for power users and administrators. Our support team includes certified AI specialists who can help with troubleshooting, optimization, and advanced use cases. We're committed to your long-term success and view ourselves as a true extension of your team.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="faq-question w-full p-6 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-inset" aria-expanded="false">
+                        <span class="text-lg font-semibold text-gray-900 text-left">How do you measure and report on ROI?</span>
+                        <i class="faq-icon fas fa-chevron-down text-orange-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-6 py-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We take ROI measurement seriously and provide comprehensive analytics and reporting. From day one, we establish baseline metrics and KPIs specific to your organization's goals. Our platform provides real-time dashboards showing cost savings, process improvements, productivity gains, and other key metrics. We generate monthly performance reports highlighting achievements, trends, and optimization opportunities. Our clients typically see measurable results within 30-60 days, with most achieving 300-400% ROI within the first year. We also conduct quarterly business reviews with your leadership team to discuss results, align on new opportunities, and refine our strategy to maximize ongoing value delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 md:py-28 bg-gradient-to-r from-orange-500 to-orange-600 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Transform Your Enterprise Today
+            </h2>
+            <p class="text-xl text-orange-50 mb-8 leading-relaxed">
+                Join hundreds of enterprise organizations that have achieved unprecedented operational excellence with Scale Smart's AI automation platform. Let our experts show you how we can transform your business.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://test.com" class="inline-block px-10 py-4 bg-white text-orange-600 font-bold rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-600">
+                    <i class="fas fa-rocket mr-2"></i>Get Started Now
+                </a>
+                <a href="mailto:bengrauwde@hotmail.com" class="inline-block px-10 py-4 border-2 border-white text-white font-bold rounded-lg transition-all duration-300 hover:bg-white hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-600">
+                    <i class="fas fa-envelope mr-2"></i>Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 rounded-lg gradient-orange flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">Scale Smart</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Enterprise AI automation for organizations that demand excellence.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-orange-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-500" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-orange-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-500" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-orange-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-500" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-orange-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-500" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Product</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Security</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Press</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">GDPR</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors duration-300 hover:text-orange-500">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2025 Scale Smart. All rights reserved. | Powered by Claude AI
+                </p>
+                <p class="text-gray-400 text-sm">
+                    <a href="mailto:bengrauwde@hotmail.com" class="text-orange-500 transition-colors duration-300 hover:text-orange-400">bengrauwde@hotmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                                otherItem.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                        question.setAttribute('aria-expanded', !isOpen);
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
